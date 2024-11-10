@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushal Chintakayala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Koushal Chintakayala</h1>
+        <p>Tech Enthusiast | Aspiring Web Developer</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showTab('about')">About Me</a></li>
+            <li><a href="#" onclick="showTab('projects')">Projects</a></li>
+            <li><a href="#" onclick="showTab('certifications')">Certifications</a></li>
+            <li><a href="#" onclick="showTab('skills')">Skills</a></li>
+            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tab Content -->
+    <section id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>Technically, I’m exploring C, C++, Python, Object-Oriented Programming (OOP) and Data Structures and Algorithms (DSA) in field of AI&ML to work on related projects.</p>
+    </section>
+
+    <section id="projects" class="tab-content" style="display: none;">
+        <h2>Projects</h2>
+        <p>Project details and descriptions can go here.</p>
+    </section>
+
+    <section id="certifications" class="tab-content" style="display: none;">
+        <h2>Certifications</h2>
+        <div class="certificate">
+            <img src="https://via.placeholder.com/500x300?text=Secluded+Security+Workshop" alt="Secluded Security Workshop">
+            <p>Secluded Security Information Workshop - Feb 9, 2024</p>
+        </div>
+        <div class="certificate">
+            <img src="https://via.placeholder.com/500x300?text=Advanced+C%2B%2B+Programming" alt="Advanced C++ Programming">
+            <p>Advanced C++ Programming - April 1, 2024</p>
+        </div>
+    </section>
+
+    <section id="skills" class="tab-content" style="display: none;">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Java, Python, C</li>
+            <li><strong>Web Technologies:</strong> HTML</li>
+            <li><strong>Object-Oriented Programming</strong></li>
+            <li><strong>Linux</strong></li>
+            <li><strong>Data Structures and Algorithms</strong></li>
+            <li><strong>Design Software:</strong> Photoshop, Premiere Pro</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="tab-content" style="display: none;">
+        <h2>Contact</h2>
+        <p>Email: <a href="kc2828@srmist.edu.in">kc2828@srmist.edu.in</a></p>
+        <p>GitHub: <a href="https://github.com/koushalchintakayala" target="_blank">koushalchintakayala</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/koushalchintakayala/" target="_blank">Koushal Chintakayala</a></p>
+    </section>
+
+    <!-- JavaScript for Tab Navigation -->
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.style.display = 'none';
+            });
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
